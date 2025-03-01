@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Login</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Email:<br><input type="text" id =sname name="firstname"><br>
+    Password:<br>
+    <input type="password" id =kname name="Password"><br>
+<button onclick="Login()">submit</button>
+<div id="massegeContainer"></div>
+
+<script>
+    function Login() {
+
+    
+let sname= document.querySelector("#sname").value
+// console.log(sname)
+let massegeContainer= document.querySelector("#massegeContainer")
+
+let kname= document.querySelector("#kname").value
+// console.log(kname)
+if(sname==="sirisha" && kname==="18"){
+    massegeContainer.textContent="login successfull"
+    
+}
+else{
+    massegeContainer.textContent="login Unsuccessfull"   
+    }
+
+// console.log(massegeContainer)
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
